@@ -1,14 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  creationTimestamp: 2017-08-02T13:32:34Z
   labels:
     run: soa-demo-consumer
   name: soa-demo-consumer
   namespace: ees
-  resourceVersion: "4355673"
-  selfLink: /api/v1/namespaces/ees/services/soa-demo-consumer
-  uid: 0b157a26-7787-11e7-9d25-0017fa009d15
 spec:
   clusterIP: 10.101.122.212
   ports:
