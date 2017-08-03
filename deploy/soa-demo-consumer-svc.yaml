@@ -15,5 +15,3 @@ spec:
     run: soa-demo-consumer
   sessionAffinity: None
   type: ClusterIP
-status:
-  loadBalancer: {}
