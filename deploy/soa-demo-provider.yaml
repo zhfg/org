@@ -31,6 +31,7 @@ spec:
         - --server.port=8001 
         - --eureka.instance.instanceId=soa-demo-provider-10.20.0.6:8001 
         - --eureka.client.serviceUrl.defaultZone=http://10.20.0.25:8080/eureka/
+        - --eureka.instance.preferIpAddress=true
         image: registry.cloud.ixicar.cn/library/soa-demo-provider:1.0.0
         imagePullPolicy: IfNotPresent
         name: soa-demo-provider
@@ -42,3 +43,5 @@ spec:
       - hostPath:
           path: /usr/share/zoneinfo/Asia/Shanghai
         name: tz-config
+      nodeSelector:
+        name: node-07
